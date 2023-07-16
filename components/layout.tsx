@@ -13,6 +13,7 @@ import ArrowBackIcon from "@rsuite/icons/ArowBack";
 import { ReactNode } from "react";
 import { NavLink } from "./nav-link";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export const Layout = ({ children }: { children: ReactNode }) => {
   const pathname = usePathname();
@@ -25,11 +26,14 @@ export const Layout = ({ children }: { children: ReactNode }) => {
           appearance="subtle"
           className="w-screen flex items-center bg-green-300 w-full text-black sm:px-20"
         >
-          <Navbar.Brand className="flex gap-2 items-center text-black sm:mx-30">
-            <PlayOutlineIcon className="text-3xl" />
-            <p className="text-2xl">STOPIFY</p>
+          <Navbar.Brand
+            onClick={() => router.push("/")}
+            className="flex gap-2 items-center cursor-pointer sm:mx-30"
+          >
+            <PlayOutlineIcon className="text-3xl text-black" />
+            <p className="text-2xl text-black">STOPIFY</p>
           </Navbar.Brand>
-          <Nav className="w-full flex items-center justify-around">
+          <Nav className="w-full flex items-center justify-around sm:text-lg">
             <Nav.Item as={NavLink as ReactNode} href="/artists/">
               Artists
             </Nav.Item>
@@ -38,7 +42,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
             </Nav.Item>
             {pathname !== "/" && (
               <Button
-                className="hover:bg-green-400"
+                className="bg-green-400 hover:bg-green-400"
                 onClick={() => router.back()}
               >
                 <ArrowBackIcon />
@@ -51,7 +55,9 @@ export const Layout = ({ children }: { children: ReactNode }) => {
         {children}
       </Content>
       <Footer className="bg-green-300 h-10 flex items-center justify-center">
-        <p>&copy; STOPIFY 2023</p>
+        <Link className="hover:no-underline hover:text-black" href="/about">
+          <p>&copy; STOPIFY 2023</p>
+        </Link>
       </Footer>
     </Container>
   );

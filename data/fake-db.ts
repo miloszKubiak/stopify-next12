@@ -2,6 +2,9 @@ export const ARTISTS = [
   {
     id: "1",
     name: "In Flames",
+    bio: "lorem ipsum dolos cos tam ",
+    year: "1999",
+    members: ["janek", "zenek", "pietrek"],
     albums: [
       {
         title: "Come Clarity",
@@ -17,6 +20,9 @@ export const ARTISTS = [
   {
     id: "2",
     name: "Linkin Park",
+    bio: "lorem ipsum dolos cos tam ",
+    year: "1999",
+    members: ["janek", "zenek", "pietrek"],
     albums: [
       {
         title: "Hybrid Theory",
@@ -29,6 +35,9 @@ export const ARTISTS = [
   {
     id: "3",
     name: "Bullet For My Valentine",
+    bio: "lorem ipsum dolos cos tam ",
+    year: "1999",
+    members: ["janek", "zenek", "pietrek"],
     albums: [
       {
         title: "The Poison",
@@ -44,6 +53,9 @@ export const ARTISTS = [
   {
     id: "4",
     name: "Trivium",
+    bio: "lorem ipsum dolos cos tam ",
+    year: "1999",
+    members: ["janek", "zenek", "pietrek"],
     albums: [
       {
         title: "Ascendancy",
