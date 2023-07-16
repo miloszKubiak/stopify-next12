@@ -30,6 +30,7 @@ const ArtistPage = ({ artist }) => {
       bio={artist.bio}
       year={artist.year}
       members={artist.members}
+      image={artist.image}
       albums={artist.albums}
     />
   );

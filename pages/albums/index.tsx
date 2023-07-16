@@ -1,4 +1,4 @@
-import { Album } from "../../components/album";
+import { AlbumListItem } from "../../components/album";
 import { GetServerSideProps } from "next";
 import { api } from "../../api/axios";
 
@@ -16,16 +16,11 @@ const AlbumsPage = ({ albums }) => {
   return (
     <div className="p-6 flex flex-wrap items-center justify-center gap-3">
       {albums.map((album) => (
-        <Album
+        <AlbumListItem
           id={album.id}
-          key={album.id}
           title={album.title}
           artist={album.artist}
-          songs={album.songs.map((song) => (
-            <p className="text-xs" key={song.title}>
-              {song.title}
-            </p>
-          ))}
+          cover={album.cover}
         />
       ))}
     </div>

@@ -1,5 +1,6 @@
 import { api } from "../../api/axios";
 import { GetStaticPropsContext } from "next";
+import { AlbumDetails } from "../../components/album";
 
 type AlbumParamsContext = {
   albumId: string;
@@ -39,18 +40,14 @@ export const getStaticProps = async ({
 };
 
 const AlbumPage = ({ album }) => {
-  if (!album) return <div>Not found</div>;
-
   return (
-    <div>
-      <h1>{album.artist}</h1>
-      <h2>{album.title}</h2>
-      <div>
-        {album.songs.map((song) => (
-          <p key={song.title}>{song.title}</p>
-        ))}
-      </div>
-    </div>
+    <AlbumDetails
+      title={album.title}
+      artist={album.artist}
+      year={album.year}
+      cover={album.cover}
+      songs={album.songs}
+    />
   );
 };
 

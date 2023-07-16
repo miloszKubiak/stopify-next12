@@ -5,6 +5,8 @@ export const ARTISTS = [
     bio: "lorem ipsum dolos cos tam ",
     year: "1999",
     members: ["janek", "zenek", "pietrek"],
+    image:
+      "https://www.terazmuzyka.pl/wp-content/uploads/news/56/565F6595-trivium-announce-2016-tour-dates-image_8549.jpg",
     albums: [
       {
         title: "Come Clarity",
@@ -23,6 +25,8 @@ export const ARTISTS = [
     bio: "lorem ipsum dolos cos tam ",
     year: "1999",
     members: ["janek", "zenek", "pietrek"],
+    image:
+      "https://www.terazmuzyka.pl/wp-content/uploads/news/56/565F6595-trivium-announce-2016-tour-dates-image_8549.jpg",
     albums: [
       {
         title: "Hybrid Theory",
@@ -38,6 +42,8 @@ export const ARTISTS = [
     bio: "lorem ipsum dolos cos tam ",
     year: "1999",
     members: ["janek", "zenek", "pietrek"],
+    image:
+      "https://www.terazmuzyka.pl/wp-content/uploads/news/56/565F6595-trivium-announce-2016-tour-dates-image_8549.jpg",
     albums: [
       {
         title: "The Poison",
@@ -56,6 +62,8 @@ export const ARTISTS = [
     bio: "lorem ipsum dolos cos tam ",
     year: "1999",
     members: ["janek", "zenek", "pietrek"],
+    image:
+      "https://www.terazmuzyka.pl/wp-content/uploads/news/56/565F6595-trivium-announce-2016-tour-dates-image_8549.jpg",
     albums: [
       {
         title: "Ascendancy",
@@ -70,9 +78,11 @@ export const ARTISTS = [
 export const ALBUMS = [
   {
     id: "1",
-    artistId: "1",
     title: "Come Clarity",
     artist: "In Flames",
+    year: "2000",
+    cover:
+      "https://upload.wikimedia.org/wikipedia/en/a/a6/Ascendancy_album_cover.jpg",
     songs: [
       {
         title: "song11",
@@ -93,9 +103,11 @@ export const ALBUMS = [
   },
   {
     id: "2",
-    artistId: "2",
     title: "Hybrid Theory",
     artist: "Linkin Park",
+    year: "2000",
+    cover:
+      "https://upload.wikimedia.org/wikipedia/en/a/a6/Ascendancy_album_cover.jpg",
     songs: [
       {
         title: "song21",
@@ -116,9 +128,11 @@ export const ALBUMS = [
   },
   {
     id: "3",
-    artistId: "3",
     title: "The Poison",
     artist: "Bullet For My Valentine",
+    year: "2000",
+    cover:
+      "https://upload.wikimedia.org/wikipedia/en/a/a6/Ascendancy_album_cover.jpg",
     songs: [
       {
         title: "song31",
@@ -139,9 +153,11 @@ export const ALBUMS = [
   },
   {
     id: "4",
-    artistId: "4",
     title: "Ascendancy",
     artist: "Trivium",
+    year: "2000",
+    cover:
+      "https://upload.wikimedia.org/wikipedia/en/a/a6/Ascendancy_album_cover.jpg",
     songs: [
       {
         title: "song41",

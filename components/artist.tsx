@@ -1,4 +1,4 @@
-import { Button, Panel } from "rsuite";
+import { Button, List, Panel } from "rsuite";
 import Link from "next/link";
 
 type Artist = {
@@ -7,6 +7,7 @@ type Artist = {
   bio: string;
   year: string;
   members: string[];
+  image: string;
   albums: { title: string }[];
 };
 
@@ -19,24 +20,28 @@ export const ArtistDetails = ({
   bio,
   year,
   members,
+  image,
   albums,
 }: ArtistDetailsProps) => {
   return (
-    <div>
-      <h1>{name}</h1>
-      <p>{bio}</p>
-      <p>{year}</p>
-      <div>
+    <List bordered style={{ padding: 20 }}>
+      <img src={image} alt={`Members of the ${name} band.`} />
+      <List.Item>{name}</List.Item>
+      <List.Item>Bio: {bio}</List.Item>
+      <List.Item>Year: {year}</List.Item>
+      <List.Item className="flex items-center gap-2">
+        Members:
         {members?.map((member, index) => (
-          <p key={index}>{member}</p>
+          <div key={index}>{member}</div>
         ))}
-      </div>
-      <div>
+      </List.Item>
+      <List.Item className="flex items-center gap-2">
+        Albums:
         {albums?.map((album) => (
-          <p key={album.title}>{album.title}</p>
+          <div key={album.title}>{album.title}</div>
         ))}
-      </div>
-    </div>
+      </List.Item>
+    </List>
   );
 };
 
