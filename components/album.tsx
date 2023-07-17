@@ -1,5 +1,6 @@
 import { Button, List, Panel } from "rsuite";
 import Link from "next/link";
+import Image from "next/image";
 
 type Album = {
   id: string;
@@ -9,32 +10,33 @@ type Album = {
   cover: string;
   songs: { title: string }[];
 };
+type AlbumListItem = Omit<Album, "year" | "songs">;
+type AlbumDetails = Omit<Album, "id">;
 
-type AlbumListItemProps = Omit<Album, "year" | "songs">;
+type AlbumListItemProps = {
+  data: AlbumListItem;
+};
 
-type AlbumDetailsProps = Omit<Album, "id">;
+type AlbumDetailsProps = {
+  data: AlbumDetails;
+};
 
-export const AlbumDetails = ({
-  title,
-  artist,
-  year,
-  cover,
-  songs,
-}: AlbumDetailsProps) => {
+export const AlbumDetails = ({ data }: AlbumDetailsProps) => {
   return (
-    <Panel header={title}>
+    <Panel bordered header={data.title} style={{ backgroundColor: "white" }}>
       <List style={{ padding: 20 }}>
-        <img
-          className="w-full"
-          src={cover}
-          alt={`Cover of the ${title} album.`}
+        <Image
+          src={data.cover}
+          width={340}
+          height={340}
+          alt={`Cover of the ${data.title} album.`}
         />
-        <List.Item>{artist}</List.Item>
-        <List.Item>Year: {year}</List.Item>
+        <List.Item>{data.artist}</List.Item>
+        <List.Item>Year: {data.year}</List.Item>
         <List.Item className="flex gap-2">
           Songs:
-          <div className="">
-            {songs?.map((song) => (
+          <div>
+            {data.songs?.map((song) => (
               <div key={song.title}>{song.title}</div>
             ))}
           </div>
@@ -44,26 +46,29 @@ export const AlbumDetails = ({
   );
 };
 
-export const AlbumListItem = ({
-  id,
-  title,
-  artist,
-  cover,
-}: AlbumListItemProps) => {
+export const AlbumListItem = ({ data }: AlbumListItemProps) => {
   return (
     <Panel
       shaded
       bordered
       bodyFill
-      style={{ display: "inline-block", width: 240 }}
+      style={{ display: "inline-block", width: 300 }}
     >
-      <img src={cover} height="240" alt="album image" />
-      <Panel header={title}>
-        <h1>{artist}</h1>
-        <Link href={`/albums/${id}`}>
+      <Image
+        src={data.cover}
+        width={300}
+        height={300}
+        alt={`Cover of the ${data.title} album.`}
+      />
+      <div className="p-2 my-0 bg-zinc-200-200 flex justify-between items-center">
+        <div>
+          <h1 className="font-bold">{data.artist}</h1>
+          <p>{data.title}</p>
+        </div>
+        <Link href={`/albums/${data.id}`}>
           <Button className="bg-green-400">Details</Button>
         </Link>
-      </Panel>
+      </div>
     </Panel>
   );
 };

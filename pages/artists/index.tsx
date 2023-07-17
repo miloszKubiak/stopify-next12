@@ -1,12 +1,6 @@
-import { Artist, ArtistListItem } from "../../components/artist";
+import { ArtistListItem } from "../../components/artist";
 import { GetServerSideProps } from "next";
 import { api } from "../../api/axios";
-
-type Artist = {
-  id: number;
-  name: string;
-  albums: Object[];
-};
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const response = await api.get("/api/artists");
@@ -20,10 +14,19 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
 const ArtistsPage = ({ artists }) => {
   return (
-    <div className="flex flex-col justify-around gap-3">
-      {artists.map((artist) => (
-        <ArtistListItem id={artist.id} key={artist.id} name={artist.name} />
-      ))}
+    <div className="flex flex-col justify-between items-center w-3/4 mx-auto">
+      <h1 className="py-4 font-bold text-3xl">List of Artists</h1>
+      <div className="p-6 flex flex-wrap items-center justify-center gap-3">
+        {artists.map((artist) => (
+          <ArtistListItem
+            key={artist.id}
+            data={{
+              id: artist.id,
+              name: artist.name,
+            }}
+          />
+        ))}
+      </div>
     </div>
   );
 };

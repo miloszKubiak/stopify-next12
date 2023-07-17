@@ -20,7 +20,10 @@ export const Layout = ({ children }: { children: ReactNode }) => {
   const router = useRouter();
 
   return (
-    <Container className="flex-col justify-between min-h-screen">
+    <Container
+      className="flex-col justify-between min-h-screen"
+      style={{ width: "100vw" }}
+    >
       <Header>
         <Navbar
           appearance="subtle"
@@ -42,7 +45,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
             </Nav.Item>
             {pathname !== "/" && (
               <Button
-                className="bg-green-400 hover:bg-green-400"
+                style={{ backgroundColor: "rgb(74 222 128)" }}
                 onClick={() => router.back()}
               >
                 <ArrowBackIcon />

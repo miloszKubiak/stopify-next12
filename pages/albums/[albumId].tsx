@@ -42,11 +42,13 @@ export const getStaticProps = async ({
 const AlbumPage = ({ album }) => {
   return (
     <AlbumDetails
-      title={album.title}
-      artist={album.artist}
-      year={album.year}
-      cover={album.cover}
-      songs={album.songs}
+      data={{
+        title: album.title,
+        artist: album.artist,
+        year: album.year,
+        cover: album.cover,
+        songs: album.songs,
+      }}
     />
   );
 };

@@ -1,5 +1,6 @@
 import { Button, List, Panel } from "rsuite";
 import Link from "next/link";
+import Image from "next/image";
 
 type Artist = {
   id: string;
@@ -8,49 +9,58 @@ type Artist = {
   year: string;
   members: string[];
   image: string;
-  albums: { title: string }[];
+  albums: { id: string; title: string }[];
+};
+type ArtistDetails = Omit<Artist, "id">;
+type ArtistListItem = Pick<Artist, "id" | "name">;
+
+type ArtistDetailsProps = {
+  data: ArtistDetails;
+};
+type ArtistListItemProps = {
+  data: ArtistListItem;
 };
 
-type ArtistDetailsProps = Omit<Artist, "id">;
-
-type ArtistListItemProps = Pick<Artist, "id" | "name">;
-
-export const ArtistDetails = ({
-  name,
-  bio,
-  year,
-  members,
-  image,
-  albums,
-}: ArtistDetailsProps) => {
+export const ArtistDetails = ({ data }: ArtistDetailsProps) => {
   return (
-    <List bordered style={{ padding: 20 }}>
-      <img src={image} alt={`Members of the ${name} band.`} />
-      <List.Item>{name}</List.Item>
-      <List.Item>Bio: {bio}</List.Item>
-      <List.Item>Year: {year}</List.Item>
-      <List.Item className="flex items-center gap-2">
+    <List bordered style={{ backgroundColor: "white" }}>
+      <Image
+        width={340}
+        height={340}
+        src={data.image}
+        alt={`Members of the ${data.name} band.`}
+      />
+      <List.Item>{data.name}</List.Item>
+      <List.Item>Bio: {data.bio}</List.Item>
+      <List.Item>Year: {data.year}</List.Item>
+      <List.Item className="flex gap-2">
         Members:
-        {members?.map((member, index) => (
-          <div key={index}>{member}</div>
-        ))}
+        <div>
+          {data.members?.map((member, index) => (
+            <div key={index}>{member}</div>
+          ))}
+        </div>
       </List.Item>
-      <List.Item className="flex items-center gap-2">
+      <List.Item className="flex gap-2">
         Albums:
-        {albums?.map((album) => (
-          <div key={album.title}>{album.title}</div>
-        ))}
+        <div className="flex flex-col">
+          {data.albums?.map((album) => (
+            <Link key={album.id} href={`/albums/${album.id}`}>
+              {album.title}
+            </Link>
+          ))}
+        </div>
       </List.Item>
     </List>
   );
 };
 
-export const ArtistListItem = ({ id, name }: ArtistListItemProps) => {
+export const ArtistListItem = ({ data }: ArtistListItemProps) => {
   return (
     <Panel shaded bordered style={{ width: 300 }}>
       <div className="flex items-center justify-between">
-        <h1>{name}</h1>
-        <Link href={`/artists/${id}`}>
+        <h1>{data.name}</h1>
+        <Link href={`/artists/${data.id}`}>
           <Button appearance="default" className="bg-green-400">
             Details
           </Button>

@@ -14,13 +14,16 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
 const AlbumsPage = ({ albums }) => {
   return (
-    <div className="p-6 flex flex-wrap items-center justify-center gap-3">
+    <div className="p-2 flex flex-wrap items-center justify-center gap-3">
       {albums.map((album) => (
         <AlbumListItem
-          id={album.id}
-          title={album.title}
-          artist={album.artist}
-          cover={album.cover}
+          key={album.id}
+          data={{
+            id: album.id,
+            title: album.title,
+            artist: album.artist,
+            cover: album.cover,
+          }}
         />
       ))}
     </div>

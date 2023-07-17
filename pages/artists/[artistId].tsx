@@ -26,12 +26,14 @@ export const getServerSideProps = async ({
 const ArtistPage = ({ artist }) => {
   return (
     <ArtistDetails
-      name={artist.name}
-      bio={artist.bio}
-      year={artist.year}
-      members={artist.members}
-      image={artist.image}
-      albums={artist.albums}
+      data={{
+        name: artist.name,
+        bio: artist.bio,
+        year: artist.year,
+        members: artist.members,
+        image: artist.image,
+        albums: artist.albums,
+      }}
     />
   );
 };
