@@ -2,7 +2,7 @@ import { Button, List, Panel } from "rsuite";
 import Link from "next/link";
 import Image from "next/image";
 
-type Artist = {
+export type Artist = {
   id: string;
   name: string;
   bio: string;

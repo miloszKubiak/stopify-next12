@@ -11,7 +11,7 @@ import PlayOutlineIcon from "@rsuite/icons/PlayOutline";
 import { usePathname } from "next/navigation";
 import ArrowBackIcon from "@rsuite/icons/ArowBack";
 import { ReactNode } from "react";
-import { NavLink } from "./nav-link";
+// import { NavLink } from "./nav-link";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -35,12 +35,8 @@ export const Layout = ({ children }: { children: ReactNode }) => {
               <p className="text-2xl text-black">STOPIFY</p>
             </Navbar.Brand>
             <Nav className="w-full flex items-center justify-around sm:text-lg">
-              <Nav.Item as={NavLink as ReactNode} href="/artists/">
-                Artists
-              </Nav.Item>
-              <Nav.Item as={NavLink as ReactNode} href="/albums/">
-                Albums
-              </Nav.Item>
+              <Nav.Item href="/artists/">Artists</Nav.Item>
+              <Nav.Item href="/albums/">Albums</Nav.Item>
               {pathname !== "/" && (
                 <Button
                   style={{ backgroundColor: "rgb(74 222 128)" }}

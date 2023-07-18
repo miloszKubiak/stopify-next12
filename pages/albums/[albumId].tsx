@@ -1,45 +1,62 @@
 import { api } from "../../utils/axios";
-import { GetStaticPropsContext } from "next";
-import { AlbumDetails } from "../../components/album";
+import { GetServerSidePropsContext, GetStaticPropsContext } from "next";
+import { Album, AlbumDetails } from "../../components/album";
 
 type AlbumParamsContext = {
   albumId: string;
 };
 
-export const getStaticPaths = async () => {
-  const response = await api.get("/api/albums/");
+// export const getStaticPaths = async () => {
+//   const response = await api.get("/api/albums/");
+//
+//   return {
+//     paths: response.data.map((album: Album) => {
+//       return {
+//         params: {
+//           albumId: album.id,
+//         },
+//       };
+//     }),
+//     fallback: false,
+//   };
+// };
+//
+// export const getStaticProps = async ({
+//   params,
+// }: GetStaticPropsContext<AlbumParamsContext>) => {
+//   if (!params?.albumId) {
+//     return {
+//       props: {},
+//       notFound: true,
+//     };
+//   }
+//   const response = await api.get(`/api/albums/${params?.albumId}`);
+//
+//   return {
+//     props: {
+//       album: response.data,
+//     },
+//   };
+// };
 
-  return {
-    paths: response.data.map((album) => {
-      return {
-        params: {
-          albumId: album.id,
-        },
-      };
-    }),
-    fallback: false,
-  };
-};
-
-export const getStaticProps = async ({
+export const getServerSideProps = async ({
   params,
-}: GetStaticPropsContext<AlbumParamsContext>) => {
-  if (!params?.albumId) {
+}: GetServerSidePropsContext<AlbumParamsContext>) => {
+  try {
+    const response = await api.get(`/api/artists/${params?.albumId}`);
     return {
-      props: {},
+      props: {
+        artist: response.data,
+      },
+    };
+  } catch (error) {
+    return {
       notFound: true,
     };
   }
-  const response = await api.get(`/api/albums/${params?.albumId}`);
-
-  return {
-    props: {
-      album: response.data,
-    },
-  };
 };
 
-const AlbumPage = ({ album }) => {
+const AlbumPage = ({ album }: { album: Album }) => {
   return (
     <AlbumDetails
       data={{

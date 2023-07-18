@@ -1,6 +1,6 @@
 import { GetServerSidePropsContext } from "next";
 import { api } from "../../utils/axios";
-import { ArtistDetails } from "../../components/artist";
+import { Artist, ArtistDetails } from "../../components/artist";
 
 type ArtistParamsContext = {
   artistId: string;
@@ -23,7 +23,7 @@ export const getServerSideProps = async ({
   }
 };
 
-const ArtistPage = ({ artist }) => {
+const ArtistPage = ({ artist }: { artist: Artist }) => {
   return (
     <ArtistDetails
       data={{

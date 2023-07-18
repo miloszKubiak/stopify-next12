@@ -1,4 +1,4 @@
-import { AlbumListItem } from "../../components/album";
+import { Album, AlbumListItem } from "../../components/album";
 import { GetServerSideProps } from "next";
 import { api } from "../../utils/axios";
 
@@ -12,7 +12,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   };
 };
 
-const AlbumsPage = ({ albums }) => {
+const AlbumsPage = ({ albums }: { albums: Album[] }) => {
   return (
     <div className="my-4">
       <h1 className="py-4 font-bold text-center text-3xl">List of Albums</h1>

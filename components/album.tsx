@@ -2,7 +2,7 @@ import { Button, List, Panel, PanelGroup } from "rsuite";
 import Link from "next/link";
 import Image from "next/image";
 
-type Album = {
+export type Album = {
   id: string;
   title: string;
   artist: string;

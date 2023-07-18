@@ -1,4 +1,4 @@
-import { ArtistListItem } from "../../components/artist";
+import { Artist, ArtistListItem } from "../../components/artist";
 import { GetServerSideProps } from "next";
 import { api } from "../../utils/axios";
 
@@ -12,7 +12,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   };
 };
 
-const ArtistsPage = ({ artists }) => {
+const ArtistsPage = ({ artists }: { artists: Artist[] }) => {
   return (
     <div className="flex flex-col justify-between items-center w-3/4 mx-auto">
       <h1 className="py-4 font-bold text-3xl">List of Artists</h1>
