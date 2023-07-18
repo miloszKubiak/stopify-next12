@@ -23,35 +23,37 @@ type ArtistListItemProps = {
 
 export const ArtistDetails = ({ data }: ArtistDetailsProps) => {
   return (
-    <List bordered style={{ backgroundColor: "white" }}>
-      <Image
-        width={340}
-        height={340}
-        src={data.image}
-        alt={`Members of the ${data.name} band.`}
-      />
-      <List.Item>{data.name}</List.Item>
-      <List.Item>Bio: {data.bio}</List.Item>
-      <List.Item>Year: {data.year}</List.Item>
-      <List.Item className="flex gap-2">
-        Members:
-        <div>
-          {data.members?.map((member, index) => (
-            <div key={index}>{member}</div>
-          ))}
-        </div>
-      </List.Item>
-      <List.Item className="flex gap-2">
-        Albums:
-        <div className="flex flex-col">
-          {data.albums?.map((album) => (
-            <Link key={album.id} href={`/albums/${album.id}`}>
-              {album.title}
-            </Link>
-          ))}
-        </div>
-      </List.Item>
-    </List>
+    <div className="py-4 px-2">
+      <List bordered style={{ backgroundColor: "white" }}>
+        <Image
+          width={340}
+          height={340}
+          src={data.image}
+          alt={`Members of the ${data.name} band.`}
+        />
+        <List.Item>{data.name}</List.Item>
+        <List.Item>Bio: {data.bio}</List.Item>
+        <List.Item>Year: {data.year}</List.Item>
+        <List.Item className="flex gap-2">
+          Members:
+          <div>
+            {data.members?.map((member, index) => (
+              <div key={index}>{member}</div>
+            ))}
+          </div>
+        </List.Item>
+        <List.Item className="flex gap-2">
+          Albums:
+          <div className="flex flex-col">
+            {data.albums?.map((album) => (
+              <Link key={album.id} href={`/albums/${album.id}`}>
+                {album.title}
+              </Link>
+            ))}
+          </div>
+        </List.Item>
+      </List>
+    </div>
   );
 };
 

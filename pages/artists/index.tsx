@@ -1,6 +1,6 @@
 import { ArtistListItem } from "../../components/artist";
 import { GetServerSideProps } from "next";
-import { api } from "../../api/axios";
+import { api } from "../../utils/axios";
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const response = await api.get("/api/artists");

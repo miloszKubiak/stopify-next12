@@ -1,4 +1,4 @@
-import { api } from "../../api/axios";
+import { api } from "../../utils/axios";
 import { GetStaticPropsContext } from "next";
 import { AlbumDetails } from "../../components/album";
 

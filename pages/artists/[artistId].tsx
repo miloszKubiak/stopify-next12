@@ -1,5 +1,5 @@
 import { GetServerSidePropsContext } from "next";
-import { api } from "../../api/axios";
+import { api } from "../../utils/axios";
 import { ArtistDetails } from "../../components/artist";
 
 type ArtistParamsContext = {
