@@ -166,24 +166,48 @@ export const ALBUMS = [
     id: "1",
     title: "Come Clarity",
     artist: "In Flames",
-    year: "2000",
+    year: "3 February 2006",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/d95cfc0586764dd98bc6d4c80f3385f3.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Take This Life",
       },
       {
-        title: "song12",
+        title: "Leeches",
       },
       {
-        title: "song13",
+        title: "Reflect the Storm",
       },
       {
-        title: "song14",
+        title: "Dead End (feat. Lisa Miskovsky)",
       },
       {
-        title: "song15",
+        title: "Scream",
+      },
+      {
+        title: "Come Clarity",
+      },
+      {
+        title: "Vacuum",
+      },
+      {
+        title: "Pacing Death's Trail",
+      },
+      {
+        title: "Crawl Through Knives",
+      },
+      {
+        title: "Versus Terminus",
+      },
+      {
+        title: "Our Infinite Struggle",
+      },
+      {
+        title: "Vanishing Light",
+      },
+      {
+        title: "Your Bedtime Story Is Scaring Everyone",
       },
     ],
   },
@@ -191,24 +215,45 @@ export const ALBUMS = [
     id: "2",
     title: "A Sense Of Purpose",
     artist: "In Flames",
-    year: "2000",
+    year: "1 April 2008",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/e17f6fe94a9d4a78bd102b09b4aade30.jpg",
     songs: [
       {
-        title: "song11",
+        title: "The Mirror's Truth",
       },
       {
-        title: "song12",
+        title: "Disconnected",
       },
       {
-        title: "song13",
+        title: "Sleepless Again",
       },
       {
-        title: "song14",
+        title: "Alias",
       },
       {
-        title: "song15",
+        title: "I'm the Highway",
+      },
+      {
+        title: "Delight and Angers",
+      },
+      {
+        title: "Move Through Me",
+      },
+      {
+        title: "The Chosen Pessimist",
+      },
+      {
+        title: "Sober and Irrelevant",
+      },
+      {
+        title: "Condemned",
+      },
+      {
+        title: "Drenched in Fear",
+      },
+      {
+        title: "March to the Shore",
       },
     ],
   },
@@ -216,24 +261,42 @@ export const ALBUMS = [
     id: "3",
     title: "Clayman",
     artist: "In Flames",
-    year: "2000",
+    year: "3 July 2000",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/81bd06710a5fa4f69f88f863585f8add.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Bullet Ride",
       },
       {
-        title: "song12",
+        title: "Pinball Map",
       },
       {
-        title: "song13",
+        title: "Only for the Weak",
       },
       {
-        title: "song14",
+        title: "...As the Future Repeats Today",
       },
       {
-        title: "song15",
+        title: "Square Nothing",
+      },
+      {
+        title: "Clayman",
+      },
+      {
+        title: "Satellites and Astronauts",
+      },
+      {
+        title: "Brush the Dust Away",
+      },
+      {
+        title: "Swim",
+      },
+      {
+        title: "Suburban Me (featuring Christopher Amott)",
+      },
+      {
+        title: "Another Day in Quicksand",
       },
     ],
   },
@@ -241,24 +304,45 @@ export const ALBUMS = [
     id: "4",
     title: "Hybrid Theory",
     artist: "Linkin Park",
-    year: "2000",
+    year: "24 October 2000",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/cc15ebc58ec625979776cabaaaa282fa.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Papercut",
       },
       {
-        title: "song12",
+        title: "One Step Closer",
       },
       {
-        title: "song13",
+        title: "With You",
       },
       {
-        title: "song14",
+        title: "Points of Authority",
       },
       {
-        title: "song15",
+        title: "Crawling",
+      },
+      {
+        title: "Runaway",
+      },
+      {
+        title: "By Myself",
+      },
+      {
+        title: "In the End",
+      },
+      {
+        title: "A Place for My Head",
+      },
+      {
+        title: "Forgotten",
+      },
+      {
+        title: "Cure for the Itch",
+      },
+      {
+        title: "Pushing Me Away",
       },
     ],
   },
@@ -266,24 +350,48 @@ export const ALBUMS = [
     id: "5",
     title: "Meteora",
     artist: "Linkin Park",
-    year: "2000",
+    year: "25 March 2003",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/b636ff6f39f8dd435c89fc7bd2e002f8.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Foreword",
       },
       {
-        title: "song12",
+        title: "Don't Stay",
       },
       {
-        title: "song13",
+        title: "Somewhere I Belong",
       },
       {
-        title: "song14",
+        title: "Lying from You",
       },
       {
-        title: "song15",
+        title: "Hit the Floor",
+      },
+      {
+        title: "Easier to Run",
+      },
+      {
+        title: "Faint",
+      },
+      {
+        title: "Figure.09",
+      },
+      {
+        title: "Breaking the Habit",
+      },
+      {
+        title: "From the Inside",
+      },
+      {
+        title: "Nobody's Listening",
+      },
+      {
+        title: "Session",
+      },
+      {
+        title: "Numb",
       },
     ],
   },
@@ -291,24 +399,48 @@ export const ALBUMS = [
     id: "6",
     title: "The Poison",
     artist: "Bullet For My Valentine",
-    year: "2000",
+    year: "3 October 2005",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/91136e05c4064d699064bff81a6e5c79.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Intro",
       },
       {
-        title: "song12",
+        title: "Her Voice Resides",
       },
       {
-        title: "song13",
+        title: "4 Words (To Choke Upon)",
       },
       {
-        title: "song14",
+        title: "Tears Don't Fall",
       },
       {
-        title: "song15",
+        title: "Suffocating Under Words of Sorrow (What Can I Do)",
+      },
+      {
+        title: "Hit the Floor",
+      },
+      {
+        title: "All These Things I Hate (Revolve Around Me)",
+      },
+      {
+        title: "Room 409",
+      },
+      {
+        title: "The Poison",
+      },
+      {
+        title: "10 Years Today",
+      },
+      {
+        title: "Cries in Vain",
+      },
+      {
+        title: "Spit You Out",
+      },
+      {
+        title: "The End",
       },
     ],
   },
@@ -316,24 +448,42 @@ export const ALBUMS = [
     id: "7",
     title: "Scream, Aim, Fire",
     artist: "Bullet For My Valentine",
-    year: "2000",
+    year: "28 January 2008",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/5f1ee2c3506cd5618dca63fa145e21f1.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Scream Aim Fire",
       },
       {
-        title: "song12",
+        title: "Eye of the Storm",
       },
       {
-        title: "song13",
+        title: "Hearts Burst into Fire",
       },
       {
-        title: "song14",
+        title: "Waking the Demon",
       },
       {
-        title: "song15",
+        title: "Disappear",
+      },
+      {
+        title: "Deliver Us from Evil",
+      },
+      {
+        title: "Take It Out on Me (featuring Benji Webbe)",
+      },
+      {
+        title: "Say Goodnight",
+      },
+      {
+        title: "End of Days",
+      },
+      {
+        title: "Last to Know",
+      },
+      {
+        title: "Forever and Always",
       },
     ],
   },
@@ -341,24 +491,42 @@ export const ALBUMS = [
     id: "8",
     title: "Fever",
     artist: "Bullet For My Valentine",
-    year: "2000",
+    year: "26 April 2010",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/4d153bb02769455397c8b460eacd4f61.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Your Betrayal",
       },
       {
-        title: "song12",
+        title: "Fever",
       },
       {
-        title: "song13",
+        title: "The Last Fight",
       },
       {
-        title: "song14",
+        title: "A Place Where You Belong",
       },
       {
-        title: "song15",
+        title: "Pleasure and Pain",
+      },
+      {
+        title: "Alone",
+      },
+      {
+        title: "Breaking Out, Breaking Down",
+      },
+      {
+        title: "Bittersweet Memories",
+      },
+      {
+        title: "Dignity",
+      },
+      {
+        title: "Begging for Mercy",
+      },
+      {
+        title: "Pretty on the Outside",
       },
     ],
   },
@@ -366,24 +534,45 @@ export const ALBUMS = [
     id: "9",
     title: "Ascendancy",
     artist: "Trivium",
-    year: "2000",
+    year: "15 March 2005",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/78c25475dcad46a39356fc4c73f493e6.jpg",
     songs: [
       {
-        title: "song11",
+        title: "The End of Everything",
       },
       {
-        title: "song12",
+        title: "Rain",
       },
       {
-        title: "song13",
+        title: "Pull Harder on the Strings of Your Martyr",
       },
       {
-        title: "song14",
+        title: "Drowned and Torn Asunder",
       },
       {
-        title: "song15",
+        title: "Ascendancy",
+      },
+      {
+        title: "A Gunshot to the Head of Trepidation",
+      },
+      {
+        title: "Like Light to the Flies",
+      },
+      {
+        title: "Dying in Your Arms",
+      },
+      {
+        title: "The Deceived",
+      },
+      {
+        title: "Suffocating Sight",
+      },
+      {
+        title: "Departure",
+      },
+      {
+        title: "Declaration",
       },
     ],
   },
@@ -391,24 +580,42 @@ export const ALBUMS = [
     id: "10",
     title: "Shogun",
     artist: "Trivium",
-    year: "2000",
+    year: "30 September 2008",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/fa252985525e43a39c6be9cf68b80750.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Kirisute Gomen",
       },
       {
-        title: "song12",
+        title: "Torn Between Scylla and Charybdis",
       },
       {
-        title: "song13",
+        title: "Down from the Sky",
       },
       {
-        title: "song14",
+        title: "Into the Mouth of Hell We March",
       },
       {
-        title: "song15",
+        title: "Throes of Perdition",
+      },
+      {
+        title: "Insurrection",
+      },
+      {
+        title: "The Calamity",
+      },
+      {
+        title: "He Who Spawned the Furies",
+      },
+      {
+        title: "Of Prometheus and the Crucifix",
+      },
+      {
+        title: "Like Callisto to a Star in Heaven",
+      },
+      {
+        title: "Shogun",
       },
     ],
   },
@@ -416,24 +623,33 @@ export const ALBUMS = [
     id: "11",
     title: "The Blackening",
     artist: "Machine Head",
-    year: "2000",
+    year: "26 March 2007",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/6b3cbf95869a47c7844f02f9c49914d9.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Clenching the Fists of Dissent",
       },
       {
-        title: "song12",
+        title: "Beautiful Mourning",
       },
       {
-        title: "song13",
+        title: "Aesthetics of Hate",
       },
       {
-        title: "song14",
+        title: "Now I Lay Thee Down",
       },
       {
-        title: "song15",
+        title: "Slanderous",
+      },
+      {
+        title: "Halo",
+      },
+      {
+        title: "Wolves",
+      },
+      {
+        title: "A Farewell to Arms",
       },
     ],
   },
@@ -441,24 +657,39 @@ export const ALBUMS = [
     id: "12",
     title: "Through the Ashes of Empires",
     artist: "Machine Head",
-    year: "2000",
+    year: "27 October 2003",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/5511b1eedec6406686a42f821a2bce8e.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Imperium",
       },
       {
-        title: "song12",
+        title: "Bite the Bullet",
       },
       {
-        title: "song13",
+        title: "Left Unfinished",
       },
       {
-        title: "song14",
+        title: "Elegy",
       },
       {
-        title: "song15",
+        title: "In the Presence of My Enemies",
+      },
+      {
+        title: "Days Turn Blue to Gray",
+      },
+      {
+        title: "Vim",
+      },
+      {
+        title: "All Falls Down",
+      },
+      {
+        title: "Wipe the Tears",
+      },
+      {
+        title: "Descend the Shades of Night",
       },
     ],
   },
@@ -466,24 +697,45 @@ export const ALBUMS = [
     id: "13",
     title: "Indestructible",
     artist: "Disturbed",
-    year: "2000",
+    year: "3 June 2008",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/4fe09361eb8a41e18eb06279bb8bceb6.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Indestructible",
       },
       {
-        title: "song12",
+        title: "Inside the Fire",
       },
       {
-        title: "song13",
+        title: "Deceiver",
       },
       {
-        title: "song14",
+        title: "The Night",
       },
       {
-        title: "song15",
+        title: "Perfect Insanity",
+      },
+      {
+        title: "Haunted",
+      },
+      {
+        title: "Enough",
+      },
+      {
+        title: "The Curse",
+      },
+      {
+        title: "Torn",
+      },
+      {
+        title: "Criminal",
+      },
+      {
+        title: "Divide",
+      },
+      {
+        title: "Facade",
       },
     ],
   },
@@ -491,24 +743,45 @@ export const ALBUMS = [
     id: "14",
     title: "Asylum",
     artist: "Disturbed",
-    year: "2000",
+    year: "31 August 2010",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/252f44cbc68eb0cbab6132606aa51dd8.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Remnants",
       },
       {
-        title: "song12",
+        title: "Asylum",
       },
       {
-        title: "song13",
+        title: "The Infection",
       },
       {
-        title: "song14",
+        title: "Warrior",
       },
       {
-        title: "song15",
+        title: "Another Way to Die",
+      },
+      {
+        title: "Never Again",
+      },
+      {
+        title: "The Animal",
+      },
+      {
+        title: "Crucified",
+      },
+      {
+        title: "Serpentine",
+      },
+      {
+        title: "My Child",
+      },
+      {
+        title: "Sacrifice",
+      },
+      {
+        title: "Innocence",
       },
     ],
   },
@@ -516,24 +789,42 @@ export const ALBUMS = [
     id: "15",
     title: "Wrath",
     artist: "Lamb of God",
-    year: "2000",
+    year: "23 February 2009",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/29e82cadde4904189d4e2cd87adf80be.jpg",
     songs: [
       {
-        title: "song11",
+        title: "The Passing",
       },
       {
-        title: "song12",
+        title: "In Your Words",
       },
       {
-        title: "song13",
+        title: "Set to Fail",
       },
       {
-        title: "song14",
+        title: "Contractor",
       },
       {
-        title: "song15",
+        title: "Fake Messiah",
+      },
+      {
+        title: "Grace",
+      },
+      {
+        title: "Broken Hands",
+      },
+      {
+        title: "Dead Seeds",
+      },
+      {
+        title: "Everything to Nothing",
+      },
+      {
+        title: "Choke Sermon",
+      },
+      {
+        title: "Reclamation",
       },
     ],
   },
@@ -541,24 +832,42 @@ export const ALBUMS = [
     id: "16",
     title: "Ashes of the Wake",
     artist: "Lamb of God",
-    year: "2000",
+    year: "31 August 2004",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/d67e2fa73dbd9aec069e2f27c1b8a992.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Laid to Rest",
       },
       {
-        title: "song12",
+        title: "Hourglass",
       },
       {
-        title: "song13",
+        title: "Now You've Got Something to Die For",
       },
       {
-        title: "song14",
+        title: "The Faded Line",
       },
       {
-        title: "song15",
+        title: "Omerta",
+      },
+      {
+        title: "Blood of the Scribe",
+      },
+      {
+        title: "One Gun",
+      },
+      {
+        title: "Break You",
+      },
+      {
+        title: "What I've Become",
+      },
+      {
+        title: "Ashes of the Wake",
+      },
+      {
+        title: "Remorse Is for the Dead",
       },
     ],
   },
@@ -566,24 +875,36 @@ export const ALBUMS = [
     id: "17",
     title: "A Death-Grip on Yesterday",
     artist: "Atreyu",
-    year: "2000",
+    year: "28 March 2006",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/8652140808b1e1330bbb7906c72c8ba5.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Creature",
       },
       {
-        title: "song12",
+        title: "Shameful",
       },
       {
-        title: "song13",
+        title: "Our Sick Story (Thus Far)",
       },
       {
-        title: "song14",
+        title: "The Theft",
       },
       {
-        title: "song15",
+        title: "We Stand Up",
+      },
+      {
+        title: "Ex's and Oh's",
+      },
+      {
+        title: "Your Private War",
+      },
+      {
+        title: "My Fork in the Road (Your Knife in My Back)",
+      },
+      {
+        title: "Untitled Finale",
       },
     ],
   },
@@ -591,24 +912,51 @@ export const ALBUMS = [
     id: "18",
     title: "Lead Sails Paper Anchor",
     artist: "Atreyu",
-    year: "2000",
+    year: "28 August 2007",
     cover:
       "https://lastfm.freetls.fastly.net/i/u/500x500/ad5bdeb8c08e484083a02b855bc1a5b7.jpg",
     songs: [
       {
-        title: "song11",
+        title: "Doomsday",
       },
       {
-        title: "song12",
+        title: "Honor",
       },
       {
-        title: "song13",
+        title: "Falling Down",
       },
       {
-        title: "song14",
+        title: "Becoming the Bull",
       },
       {
-        title: "song15",
+        title: "When Two Are One",
+      },
+      {
+        title: "Lose It",
+      },
+      {
+        title: "No One Cares",
+      },
+      {
+        title: "Can't Happen Here",
+      },
+      {
+        title: "Slow Burn",
+      },
+      {
+        title: "Blow",
+      },
+      {
+        title: "Lead Sails (And a Paper Anchor)",
+      },
+      {
+        title: "The Squeeze",
+      },
+      {
+        title: "Epic (Faith No More cover)",
+      },
+      {
+        title: "Clean Sheets (Descendents cover)",
       },
     ],
   },

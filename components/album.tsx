@@ -1,4 +1,4 @@
-import { Button, List, Panel } from "rsuite";
+import { Button, List, Panel, PanelGroup } from "rsuite";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -23,8 +23,16 @@ type AlbumDetailsProps = {
 
 export const AlbumDetails = ({ data }: AlbumDetailsProps) => {
   return (
-    <Panel bordered header={data.title} style={{ backgroundColor: "white" }}>
-      <List style={{ padding: 20 }}>
+    <Panel
+      bordered
+      header={data.title}
+      style={{
+        backgroundColor: "white",
+        margin: 20,
+        fontWeight: "bold",
+      }}
+    >
+      <List>
         <Image
           src={data.cover}
           width={340}
@@ -32,15 +40,20 @@ export const AlbumDetails = ({ data }: AlbumDetailsProps) => {
           alt={`Cover of the ${data.title} album.`}
         />
         <List.Item>{data.artist}</List.Item>
-        <List.Item>Year: {data.year}</List.Item>
-        <List.Item className="flex gap-2">
-          Songs:
-          <div>
-            {data.songs?.map((song) => (
-              <div key={song.title}>{song.title}</div>
-            ))}
-          </div>
-        </List.Item>
+        <List.Item>Released: {data.year}</List.Item>
+        <div className="flex gap-2 my-4">
+          <PanelGroup accordion defaultActiveKey={1} bordered>
+            <Panel header="Songs" style={{ width: 280 }}>
+              <div>
+                {data.songs?.map((song, index) => (
+                  <p key={index}>
+                    {index + 1}. {song.title}
+                  </p>
+                ))}
+              </div>
+            </Panel>
+          </PanelGroup>
+        </div>
       </List>
     </Panel>
   );
@@ -60,7 +73,7 @@ export const AlbumListItem = ({ data }: AlbumListItemProps) => {
         height={300}
         alt={`Cover of the ${data.title} album.`}
       />
-      <div className="p-2 my-0 bg-zinc-200-200 flex justify-between items-center">
+      <div className="p-4 bg-zinc-100 flex justify-between items-center">
         <div>
           <h1 className="font-bold">{data.artist}</h1>
           <p>{data.title}</p>

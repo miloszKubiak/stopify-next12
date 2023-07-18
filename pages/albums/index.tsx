@@ -14,7 +14,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
 
 const AlbumsPage = ({ albums }) => {
   return (
-    <div className="p-2 flex flex-wrap items-center justify-center gap-3">
+    <div className="my-4 mx-auto flex flex-wrap items-center justify-center gap-4">
       {albums.map((album) => (
         <AlbumListItem
           key={album.id}

@@ -59,7 +59,7 @@ export const ArtistListItem = ({ data }: ArtistListItemProps) => {
   return (
     <Panel shaded bordered style={{ width: 300 }}>
       <div className="flex items-center justify-between">
-        <h1>{data.name}</h1>
+        <h1 className="text-lg">{data.name}</h1>
         <Link href={`/artists/${data.id}`}>
           <Button appearance="default" className="bg-green-400">
             Details

@@ -20,10 +20,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
   const router = useRouter();
 
   return (
-    <Container
-      className="flex-col justify-between min-h-screen"
-      style={{ width: "100vw" }}
-    >
+    <Container className="flex-col justify-between min-h-screen">
       <Header>
         <Navbar
           appearance="subtle"
@@ -58,7 +55,10 @@ export const Layout = ({ children }: { children: ReactNode }) => {
         {children}
       </Content>
       <Footer className="bg-green-300 h-10 flex items-center justify-center">
-        <Link className="hover:no-underline hover:text-black" href="/about">
+        <Link
+          className="no-underline hover:no-underline text-black"
+          href="/about"
+        >
           <p>&copy; STOPIFY 2023</p>
         </Link>
       </Footer>
