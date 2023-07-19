@@ -8,10 +8,24 @@
   text-decoration: none;
 }
 
+.tile {
+  color: #222222;
+  transition: box-shadow .3s;
+  -webkit-box-shadow: 8px 8px 24px -24px rgba(95, 95, 95, 1);
+  -moz-box-shadow: 8px 8px 24px -24px rgba(95, 95, 95, 1);
+  box-shadow: 8px 8px 24px -24px rgba(95, 95, 95, 1);
+}
+
+.tile:hover {
+  -webkit-box-shadow: 8px 8px 32px -8px rgba(95, 95, 95, 1);
+  -moz-box-shadow: 8px 8px 32px -8px rgba(95, 95, 95, 1);
+  box-shadow: 8px 8px 32px -8px rgba(95, 95, 95, 1);
+}
+
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #86efac;
   color: black
 }

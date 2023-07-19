@@ -21,7 +21,7 @@ const AboutPage = () => {
       </div>
       <div className="text-lg mb-4 xl:w-[60%]">
         <p>
-          Tens of thousands already use Musicboard to share their thoughts and
+          Tens of thousands already use STOPIFY to share their thoughts and
           opinions within music. We provide a platform that allows our community
           to share and grow their passion for music together. With a combination
           of ratings, reviews, and lists, their profile quickly becomes a

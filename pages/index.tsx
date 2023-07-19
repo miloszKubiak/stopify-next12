@@ -22,7 +22,7 @@ const Home: NextPage = () => {
             With Friends.
           </h1>
           <p className="hidden md:block mt-4 sm:text-sm lg:text-lg">
-            Musicboard is a social platform that allows you to keep track of all
+            STOPIFY is a social platform that allows you to keep track of all
             the music you listen to and grow your passion for music with
             friends. Write reviews, rate albums, and compile lists in music's
             fastest growing community.

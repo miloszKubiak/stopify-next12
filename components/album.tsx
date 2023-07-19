@@ -1,6 +1,7 @@
-import { Button, List, Panel, PanelGroup } from "rsuite";
+import { List, Panel, PanelGroup } from "rsuite";
 import Link from "next/link";
 import Image from "next/image";
+import { GridTile } from "./grid-tile";
 import styles from "../styles/Home.module.css";
 
 export type Album = {
@@ -63,27 +64,12 @@ export const AlbumDetails = ({ data }: AlbumDetailsProps) => {
 
 export const AlbumListItem = ({ data }: AlbumListItemProps) => {
   return (
-    <Panel
-      shaded
-      bordered
-      bodyFill
-      style={{ display: "inline-block", width: 300 }}
-    >
-      <Image
-        src={data.cover}
-        width={300}
-        height={300}
-        alt={`Cover of the ${data.title} album.`}
+    <Link href={`/albums/${data.id}`}>
+      <GridTile
+        image={data.cover}
+        title={data.artist}
+        description={data.title}
       />
-      <div className="p-4 bg-zinc-100 flex justify-between items-center">
-        <div>
-          <p className="font-bold">{data.artist}</p>
-          <p>{data.title}</p>
-        </div>
-        <Link href={`/albums/${data.id}`}>
-          <Button className={styles.button}>Details</Button>
-        </Link>
-      </div>
-    </Panel>
+    </Link>
   );
 };

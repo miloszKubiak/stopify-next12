@@ -1,7 +1,7 @@
-import { Button, List, Panel, PanelGroup } from "rsuite";
+import { List } from "rsuite";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import { GridTile } from "./grid-tile";
 
 export type Artist = {
   id: string;
@@ -13,7 +13,7 @@ export type Artist = {
   albums: { id: string; title: string }[];
 };
 type ArtistDetails = Omit<Artist, "id">;
-type ArtistListItem = Pick<Artist, "id" | "name">;
+type ArtistListItem = Pick<Artist, "id" | "name" | "image">;
 
 type ArtistDetailsProps = {
   data: ArtistDetails;
@@ -66,13 +66,8 @@ export const ArtistDetails = ({ data }: ArtistDetailsProps) => {
 
 export const ArtistListItem = ({ data }: ArtistListItemProps) => {
   return (
-    <Panel shaded bordered style={{ width: 300 }}>
-      <div className="flex items-center justify-between">
-        <h1 className="text-lg">{data.name}</h1>
-        <Link href={`/artists/${data.id}`}>
-          <Button className={styles.button}>Details</Button>
-        </Link>
-      </div>
-    </Panel>
+    <Link href={`/artists/${data.id}`}>
+      <GridTile image={data.image} title={data.name} />
+    </Link>
   );
 };
