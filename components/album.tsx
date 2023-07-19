@@ -79,7 +79,9 @@ export const AlbumListItem = ({ data }: AlbumListItemProps) => {
           <p>{data.title}</p>
         </div>
         <Link href={`/albums/${data.id}`}>
-          <Button className="bg-green-400">Details</Button>
+          <Button style={{ backgroundColor: "rgb(74 222 128)" }}>
+            Details
+          </Button>
         </Link>
       </div>
     </Panel>
