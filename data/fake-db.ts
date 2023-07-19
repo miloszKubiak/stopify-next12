@@ -2,9 +2,17 @@ export const ARTISTS = [
   {
     id: "1",
     name: "In Flames",
-    bio: "lorem ipsum dolos cos tam ",
-    year: "1999",
-    members: ["janek", "zenek", "pietrek"],
+    bio: "In Flames is a Swedish melodic death metal band, formed by guitarist Jesper Strömblad in Gothenburg in 1990. Alongside At the Gates and Dark Tranquillity, In Flames pioneered the genres known as Swedish death metal and melodic death metal.",
+    year: "1990 – present",
+    members: [
+      "Anders Fridén (1995)",
+      "Björn Gelotte (1995)",
+      "Bryce Paul Newman (2017)",
+      "Daniel Svensson (1998)",
+      "Joe Rickard (2016)",
+      "Niclas Engelin (1997)",
+      "Tanner Wayne (2018)",
+    ],
     image:
       "https://lastfm.freetls.fastly.net/i/u/770x0/e806be1094f245b2add8d5b8700fb564.jpg",
     albums: [
@@ -25,9 +33,20 @@ export const ARTISTS = [
   {
     id: "2",
     name: "Linkin Park",
-    bio: "lorem ipsum dolos cos tam ",
-    year: "1999",
-    members: ["janek", "zenek", "pietrek"],
+    bio:
+      "Linkin Park is an American rock band from Agoura Hills, California. " +
+      "The band's current lineup comprises vocalist/rhythm guitarist/keyboardist Mike Shinoda, lead guitarist Brad Delson, bassist Dave Farrell, DJ/turntablist Joe Hahn and drummer Rob Bourdon, all of whom are founding members. " +
+      "Vocalists Mark Wakefield and Chester Bennington are former members of the band. " +
+      "Categorized as alternative rock, Linkin Park's earlier music spanned a fusion of heavy metal and hip hop, while their later music features more electronica and pop elements.",
+    year: "1999 – present ",
+    members: [
+      "Brad Delson (1999)",
+      "Chester Bennington (1999 – 2017)",
+      "Dave Farrell (2000)",
+      'Joseph "Joe" Hahn (1999)',
+      "Mike Shinoda (1999)",
+      "Rob Bourdon (1999)",
+    ],
     image:
       "https://lastfm.freetls.fastly.net/i/u/770x0/c61ff396fcce400ead5ffd0740a20181.jpg",
     albums: [
@@ -44,9 +63,21 @@ export const ARTISTS = [
   {
     id: "3",
     name: "Bullet For My Valentine",
-    bio: "lorem ipsum dolos cos tam ",
-    year: "1999",
-    members: ["janek", "zenek", "pietrek"],
+    bio:
+      "Bullet for My Valentine is a metal band from Bridgend, formed in 1998. The band is composed of Matt Tuck (lead vocals, rhythm guitar), Michael Paget (lead guitar), Jamie Mathias (bass guitar, backing vocals), and Jason Bowld (drums). " +
+      "They were formed under the name Jeff Killed John and started their music career by covering songs by Metallica and Nirvana. " +
+      "Jeff Killed John recorded six songs which were not released; two of these tracks were reworked later in their career as Bullet for My Valentine, a name change, which was followed by a change in music direction. " +
+      "In 2002, the band secured a five-album deal with Sony BMG. The band has stated that their music is influenced by classic heavy metal acts such as Metallica, Iron Maiden, and Slayer. The band is part of the Cardiff music scene.",
+    year: "2003 – present",
+    members: [
+      "Matthew Tuck (1998)",
+      'Michael "Moose" Thomas (1998 – 2016)',
+      "Michael Paget (1998 – present)",
+      "Nick Crandle (1998 – 2003)",
+      "Jay James (2003 – 2015)",
+      "Jason Bowld (2017 – present)",
+      "Jamie Mathias (2015 – present)",
+    ],
     image:
       "https://lastfm.freetls.fastly.net/i/u/770x0/d2f75761f48745859087b51232a02b39.jpg",
     albums: [
@@ -67,9 +98,23 @@ export const ARTISTS = [
   {
     id: "4",
     name: "Trivium",
-    bio: "lorem ipsum dolos cos tam ",
-    year: "1999",
-    members: ["janek", "zenek", "pietrek"],
+    bio:
+      "Trivium is a metal band which formed in Orlando, Florida, United States in 1999. " +
+      "The band currently consists of Matt Heafy (vocals, guitar), Corey Beaulieu (guitar), Paolo Gregoletto (bass) and Alex Bent (drums). " +
+      "Heafy is the band's only remaining original member. " +
+      'Since their formation, the band has released ten studio albums. Their most recent album, "\n' +
+      'In The Court Of The Dragon ", was released on October 8, 2021.',
+    year: "2000 – present",
+    members: [
+      "Matt Heafy (1999 – present)",
+      "Corey Beaulieu (2003 – present)",
+      "Paolo Gregoletto (2004 – present)",
+      "Alex Bent (2016 – present)",
+      "Corey Beaulieu (2003 – present)",
+      "Paolo Gregoletto (2004 – present)",
+      "Travis Smith (2000 – 2009)",
+      "Nick Augusto (2010 – 2014)",
+    ],
     image:
       "https://lastfm.freetls.fastly.net/i/u/770x0/f2ea25fcf5c4ef596370ceb065dfc0d6.jpg",
     albums: [
@@ -86,9 +131,21 @@ export const ARTISTS = [
   {
     id: "5",
     name: "Machine Head",
-    bio: "lorem ipsum dolos cos tam ",
-    year: "1999",
-    members: ["janek", "zenek", "pietrek"],
+    bio:
+      "Machine Head is an American metal band from Oakland, California. " +
+      "The band was formed in 1991 by vocalist/guitarist Robb Flynn and bassist Adam Duce. " +
+      "The band's aggressive musicianship made it one of the pioneering bands in the new wave of American heavy metal, and it is also considered to be part of the second wave of thrash metal bands from the 1990s. " +
+      "Machine Head's current lineup comprises Flynn and bassist Jared MacEachern. " +
+      "Duce, guitarists Logan Mader, Ahrue Luster and Phil Demmel and drummers Tony Costanza, Chris Kontos and Dave McClain are former members of the band; " +
+      "Mader and Kontos are currently touring with the band as part of the 25th anniversary tour for its first album, Burn My Eyes (1994).",
+    year: "1991 – present",
+    members: [
+      "Robert Flynn (1991 – present)",
+      "Adam Duce (1991 – 2013)",
+      "Dave McClain (1995 – 2018)",
+      "Logan Mader (1991 – 1998)",
+      "Phil Demmel (2002 – 2018)",
+    ],
     image:
       "https://lastfm.freetls.fastly.net/i/u/770x0/96dfcfa1fa3145aa8f9c2c6c2cfc72a7.jpg",
     albums: [
@@ -105,9 +162,20 @@ export const ARTISTS = [
   {
     id: "6",
     name: "Disturbed",
-    bio: "lorem ipsum dolos cos tam ",
-    year: "1999",
-    members: ["janek", "zenek", "pietrek"],
+    bio:
+      "Disturbed is an American alternative metal/hard rock band from Chicago, Illinois, formed in 1994. The band includes vocalist David Draiman, bassist John Moyer, guitarist/keyboardist Dan Donegan, and drummer Mike Wengren. Former band members are vocalist Erich Awalt and bassist Steve Kmak.\n" +
+      "\n" +
+      "The band has released six studio albums, five of which have consecutively debuted at number one on the Billboard 200. " +
+      "Disturbed went into hiatus in October 2011, during which the band's members focused on various side projects, and returned in June 2015, releasing their first album in four years, Immortalized, on August 21, 2015. " +
+      "They also recorded and released one live album, Disturbed: Live at Red Rocks on November 18, 2016, which was recorded on August 18, 2016 at Red Rocks Amphitheater in Morrison, Colorado, located about 10 miles west of Denver, Colorado." +
+      " Their seventh studio album, Evolution, was released on October 19, 2018.",
+    year: "1994 – present",
+    members: [
+      "David Draiman (1994 – present)",
+      "Dan Donegan (1994 – present)",
+      "John Moyer (2004 – present)",
+      "Mike Wengren (1994 – present)",
+    ],
     image:
       "https://lastfm.freetls.fastly.net/i/u/770x0/8dd06e7090504daeb5066090bfbebc04.jpg",
     albums: [
@@ -124,9 +192,22 @@ export const ARTISTS = [
   {
     id: "7",
     name: "Lamb of God",
-    bio: "lorem ipsum dolos cos tam ",
-    year: "1999",
-    members: ["janek", "zenek", "pietrek"],
+    bio:
+      "Lamb of God is an American groove metal band, originally formed under the name Burn the Priest.\n" +
+      "\n" +
+      "The roots of Lamb of God were planted in the year 1990, when Mark Morton, Chris Adler and John Campbell were friends at Virginia Commonwealth University. " +
+      'The trio began playing at Adler\'s house in Richmond weathering chilly conditions. "There was no heat in the house," recalls Campbell. "' +
+      "We would hang around the kerosene heaters, get really drunk and write metal songs. " +
+      'Fumes and Black Label beer were definitely what fueled our early days."',
+    year: "1999 – present",
+    members: [
+      "Randy Blythe (1999 – present)",
+      "Willie Adler (1999 – present)",
+      "Mark Morton (1999 – present)",
+      "John Campbell (1999 – present)",
+      "Chris Adler (1999 – 2019)",
+      "Art Cruz (2019 – present)",
+    ],
     image:
       "https://lastfm.freetls.fastly.net/i/u/770x0/a675694979f64e25a25cdfeb0c8c1b65.jpg",
     albums: [
@@ -143,9 +224,19 @@ export const ARTISTS = [
   {
     id: "8",
     name: "Atreyu",
-    bio: "lorem ipsum dolos cos tam ",
-    year: "1999",
-    members: ["janek", "zenek", "pietrek"],
+    bio:
+      "Atreyu is a five-piece melodic metalcore band from Orange County, California, United States that formed in 1998 and went on hiatus in 2011 and reformed in 2014. " +
+      'The band currently consists of clean vocalist Brandon Saller, guitarists Dan Jacobs and Travis Miguel, bassist and unclean vocalist Marc "Porter" McKnight, and drummer Kyle Rosa.',
+    year: "1998 – present",
+    members: [
+      "Travis Miguel (2000 – present)",
+      "Marc McKnight (2004 – present)",
+      "Kyle Stanley (1999 – 2001)",
+      "Kyle Rosa (2020 – present)",
+      "Dan Jacobs (1998 – present)",
+      "Chris Thomson (2001 – 2004)",
+      "Alex Varkatzas (1998 – 2020)",
+    ],
     image:
       "https://lastfm.freetls.fastly.net/i/u/770x0/99dd81af854108dda742cb3e49e347fa.jpg",
     albums: [

@@ -15,7 +15,7 @@ const AboutPage = () => {
             className="hidden md:block"
           />
         </div>
-        <h1 className="my-auto text-5xl font-black md:ml-8">
+        <h1 className="mt-4 text-5xl font-black md:ml-8">
           Over 6 million ratings recorded
         </h1>
       </div>

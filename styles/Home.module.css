@@ -32,6 +32,11 @@
   color: #333333;
 }
 
+.listItem {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .button {
   background-color: rgb(74 222 128);
   color: #222222;

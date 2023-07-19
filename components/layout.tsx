@@ -43,7 +43,10 @@ export const Layout = ({ children }: { children: ReactNode }) => {
               <Nav.Item href="/artists/">Artists</Nav.Item>
               <Nav.Item href="/albums/">Albums</Nav.Item>
               {pathname !== "/" && (
-                <Button className={styles.button} onClick={() => router.back()}>
+                <Button
+                  style={{ backgroundColor: "rgb(74 222 128)" }}
+                  onClick={() => router.back()}
+                >
                   <ArrowBackIcon />
                 </Button>
               )}
@@ -51,9 +54,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
           </div>
         </Navbar>
       </Header>
-      <Content className="bg-zinc-100 flex items-center justify-center">
-        {children}
-      </Content>
+      <Content className="flex items-center justify-center">{children}</Content>
       <Footer className="bg-green-300 h-20 flex items-center justify-center">
         <Link
           className={styles.link}

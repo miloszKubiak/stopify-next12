@@ -25,6 +25,7 @@ type AlbumDetailsProps = {
 export const AlbumDetails = ({ data }: AlbumDetailsProps) => {
   return (
     <Panel
+      shaded
       bordered
       header={data.title}
       style={{
@@ -76,7 +77,7 @@ export const AlbumListItem = ({ data }: AlbumListItemProps) => {
       />
       <div className="p-4 bg-zinc-100 flex justify-between items-center">
         <div>
-          <h1>{data.artist}</h1>
+          <p className="font-bold">{data.artist}</p>
           <p>{data.title}</p>
         </div>
         <Link href={`/albums/${data.id}`}>
