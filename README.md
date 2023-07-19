@@ -8,4 +8,4 @@ The application was written in the Next.js framework.
 TailwindCSS was used for styling.
 A library with ready-made components (Rsuite) was also used.
 
-[![app-img.jpg](https://i.postimg.cc/MpjRGbq6/app-img.jpg)](https://postimg.cc/9DCz89DK)
+[![stopify-img.png](https://i.postimg.cc/j24Rh4Br/stopify-img.png)](https://postimg.cc/8fs8pM1y)
