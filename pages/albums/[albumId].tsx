@@ -43,10 +43,10 @@ export const getServerSideProps = async ({
   params,
 }: GetServerSidePropsContext<AlbumParamsContext>) => {
   try {
-    const response = await api.get(`/api/artists/${params?.albumId}`);
+    const response = await api.get(`/api/albums/${params?.albumId}`);
     return {
       props: {
-        artist: response.data,
+        album: response.data,
       },
     };
   } catch (error) {
