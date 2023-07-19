@@ -12,7 +12,7 @@ export type Artist = {
   image: string;
   albums: { id: string; title: string }[];
 };
-type ArtistDetails = Omit<ArtistDetails, "id">;
+type ArtistDetails = Omit<Artist, "id">;
 
 type ArtistDetailsProps = {
   data: ArtistDetails;
