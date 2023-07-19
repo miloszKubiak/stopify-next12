@@ -6,7 +6,7 @@ const getAlbum = async (req: NextApiRequest, res: NextApiResponse) => {
   const album = await ALBUMS.find((album) => album.id === id);
 
   if (!album) {
-    return res.status(404).json({ msg: "Album not found." });
+    return res.status(404).json({ msg: "AlbumDetails not found." });
   }
 
   res.status(200).json(album);

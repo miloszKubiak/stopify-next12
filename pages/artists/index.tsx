@@ -1,7 +1,12 @@
-import { Artist, ArtistListItem } from "../../components/artist";
 import { GetServerSideProps } from "next";
 import { api } from "../../utils/axios";
-import { GridList } from "../../components/grid-list";
+import { GridList } from "../../components/grid/grid-list";
+import { ArtistListItem } from "../../components/artist/artistListItem";
+import { Artist } from "../../components/artist/artistDetails";
+
+type ArtistsPageProps = {
+  artists: Artist[];
+};
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const response = await api.get("/api/artists");
@@ -13,21 +18,19 @@ export const getServerSideProps: GetServerSideProps = async () => {
   };
 };
 
-const ArtistsPage = ({ artists }: { artists: Artist[] }) => {
-  return (
-    <GridList>
-      {artists.map((artist) => (
-        <ArtistListItem
-          key={artist.id}
-          data={{
-            id: artist.id,
-            name: artist.name,
-            image: artist.image,
-          }}
-        />
-      ))}
-    </GridList>
-  );
-};
+const ArtistsPage = ({ artists }: ArtistsPageProps) => (
+  <GridList title="List of Artists">
+    {artists.map(({ id, name, image }) => (
+      <ArtistListItem
+        key={id}
+        data={{
+          id,
+          name,
+          image,
+        }}
+      />
+    ))}
+  </GridList>
+);
 
 export default ArtistsPage;

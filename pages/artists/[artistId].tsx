@@ -1,10 +1,12 @@
 import { GetServerSidePropsContext } from "next";
 import { api } from "../../utils/axios";
-import { Artist, ArtistDetails } from "../../components/artist";
+import { Artist, ArtistDetails } from "../../components/artist/artistDetails";
 
 type ArtistParamsContext = {
   artistId: string;
 };
+
+type ArtistPageProps = Artist;
 
 export const getServerSideProps = async ({
   params,
@@ -12,9 +14,7 @@ export const getServerSideProps = async ({
   try {
     const response = await api.get(`/api/artists/${params?.artistId}`);
     return {
-      props: {
-        artist: response.data,
-      },
+      props: response.data,
     };
   } catch (error) {
     return {
@@ -23,19 +23,17 @@ export const getServerSideProps = async ({
   }
 };
 
-const ArtistPage = ({ artist }: { artist: Artist }) => {
-  return (
-    <ArtistDetails
-      data={{
-        name: artist.name,
-        bio: artist.bio,
-        year: artist.year,
-        members: artist.members,
-        image: artist.image,
-        albums: artist.albums,
-      }}
-    />
-  );
-};
+const ArtistPage = ({ name, bio, image, albums, year, members }: Artist) => (
+  <ArtistDetails
+    data={{
+      name,
+      bio,
+      year,
+      members,
+      image,
+      albums,
+    }}
+  />
+);
 
 export default ArtistPage;

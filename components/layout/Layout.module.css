@@ -1,0 +1,33 @@
+.link {
+    color: #222222;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #86efac;
+    color: black
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+    color: #222222;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    transition: color .2s;
+    cursor: pointer
+}
+
+.logoContainer:hover {
+    color: #333333;
+}

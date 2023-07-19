@@ -6,7 +6,7 @@ const getArtist = async (req: NextApiRequest, res: NextApiResponse) => {
   const artist = await ARTISTS.find((artist) => artist.id === id);
 
   if (!artist) {
-    return res.status(404).json({ msg: "Artist not found." });
+    return res.status(404).json({ msg: "ArtistDetails not found." });
   }
 
   res.status(200).json(artist);
