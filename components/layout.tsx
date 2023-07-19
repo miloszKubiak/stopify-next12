@@ -14,6 +14,7 @@ import { ReactNode } from "react";
 // import { NavLink } from "./nav-link";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 export const Layout = ({ children }: { children: ReactNode }) => {
   const pathname = usePathname();
@@ -22,26 +23,27 @@ export const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <Container className="flex-col justify-between min-h-screen">
       <Header>
-        <Navbar
-          appearance="subtle"
-          className="flex items-center justify-center bg-green-300 text-black"
-        >
+        <Navbar appearance="subtle" className={styles.navbar}>
           <div className="max-w-full flex">
             <Navbar.Brand
               onClick={() => router.push("/")}
-              className="flex items-center gap-2 cursor-pointer"
+              // className="flex items-center gap-2 cursor-pointer"
+              className={styles.logoContainer}
             >
-              <PlayOutlineIcon className="text-3xl text-black" />
-              <p className="text-2xl text-black">STOPIFY</p>
+              <PlayOutlineIcon
+              // className="text-3xl text-black"
+              />
+              <p
+              // className="text-2xl text-black"
+              >
+                STOPIFY
+              </p>
             </Navbar.Brand>
             <Nav className="w-full flex items-center justify-around sm:text-lg">
               <Nav.Item href="/artists/">Artists</Nav.Item>
               <Nav.Item href="/albums/">Albums</Nav.Item>
               {pathname !== "/" && (
-                <Button
-                  style={{ backgroundColor: "rgb(74 222 128)" }}
-                  onClick={() => router.back()}
-                >
+                <Button className={styles.button} onClick={() => router.back()}>
                   <ArrowBackIcon />
                 </Button>
               )}
@@ -54,7 +56,8 @@ export const Layout = ({ children }: { children: ReactNode }) => {
       </Content>
       <Footer className="bg-green-300 h-20 flex items-center justify-center">
         <Link
-          className="no-underline hover:no-underline text-black"
+          className={styles.link}
+          // className="no-underline hover:no-underline text-black"
           href="/about"
         >
           <p>&copy; STOPIFY 2023</p>

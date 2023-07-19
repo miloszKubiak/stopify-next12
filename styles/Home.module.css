@@ -1,3 +1,48 @@
+.link {
+  color: #222222;
+  text-decoration: none;
+}
+
+.link a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #86efac;
+  color: black
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+  color: #222222;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  transition: color .2s;
+  cursor: pointer
+}
+
+.logoContainer:hover {
+  color: #333333;
+}
+
+.button {
+  background-color: rgb(74 222 128);
+  color: #222222;
+  transition: .2s;
+}
+
+.button:hover {
+  color: #f4f4f5;
+  background-color: rgb(34 197 94);
+}
+
 .container {
   padding: 0 2rem;
 }

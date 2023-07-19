@@ -1,6 +1,7 @@
 import { Button, List, Panel } from "rsuite";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export type Artist = {
   id: string;
@@ -63,9 +64,7 @@ export const ArtistListItem = ({ data }: ArtistListItemProps) => {
       <div className="flex items-center justify-between">
         <h1 className="text-lg">{data.name}</h1>
         <Link href={`/artists/${data.id}`}>
-          <Button appearance="default" className="bg-green-400">
-            Details
-          </Button>
+          <Button className={styles.button}>Details</Button>
         </Link>
       </div>
     </Panel>

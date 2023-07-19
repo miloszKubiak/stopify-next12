@@ -1,6 +1,7 @@
 import { Button, List, Panel, PanelGroup } from "rsuite";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export type Album = {
   id: string;
@@ -75,13 +76,11 @@ export const AlbumListItem = ({ data }: AlbumListItemProps) => {
       />
       <div className="p-4 bg-zinc-100 flex justify-between items-center">
         <div>
-          <h1 className="font-bold">{data.artist}</h1>
+          <h1>{data.artist}</h1>
           <p>{data.title}</p>
         </div>
         <Link href={`/albums/${data.id}`}>
-          <Button style={{ backgroundColor: "rgb(74 222 128)" }}>
-            Details
-          </Button>
+          <Button className={styles.button}>Details</Button>
         </Link>
       </div>
     </Panel>
